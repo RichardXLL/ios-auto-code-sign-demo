@@ -57,5 +57,11 @@ workflows:
               - user1@example.com
               - user2@example.com
             notify:
-              - success: true
-              - failure: true
+              success: true
+              failure: true
+        slack:
+            channel: '#builds'
+            notify_on_build_start: true    # To receive a notification when a build starts
+            notify:
+              success: false               # To not receive a notification when a build succeeds
+              failure: false               # To not receive a notification when a build fails
