@@ -1,6 +1,6 @@
 workflows:
-    ios-swiftly:
-      name: ios_swiftly
+    ios-workflow:
+      name: iOS Workflow
       environment:
         vars:
           XCODE_WORKSPACE: "swiftly.xcworkspace" # <-- Put the name of your workspace here.
